@@ -27,8 +27,7 @@ var getUserRepos = function(user) {
   var apiUrl = 'https://api.github.com/users/' + user + '/repos';
 
   // make a get request to url
-  fetch(apiUrl)
-    .then(function(response) {
+  fetch(apiUrl).then(function(response) {
       // request was successful
       if (response.ok) {
         console.log(response);
